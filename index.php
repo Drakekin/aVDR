@@ -9,7 +9,7 @@
 	$timeout = 30;
 
 	// Connect to the rolls database
-	$conn = mysql_connect("localhost", "lifeind1_avdr", "mcitf") or die("Can't connect to DB");
+	$conn = mysql_connect("<<host>>", "<<database>>", "<<password>>") or die("Can't connect to DB");
 	mysql_select_db("lifeind1_avdr", $conn) or die("Can't select DB" . mysql_error());
 	
 	// Start the RNG
