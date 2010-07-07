@@ -12,8 +12,8 @@
 	}
 
 	// Connect to the rolls database
-	$conn = mysql_connect("<<host>>", "<<database>>", "<<password>>") or die("Can't connect to DB");
-	mysql_select_db("lifeind1_avdr", $conn) or die("Can't select DB" . mysql_error());
+	$conn = mysql_connect("<<host>>", "<<username>>", "<<password>>") or die("Can't connect to DB");
+	mysql_select_db("<<database>>", $conn) or die("Can't select DB" . mysql_error());
 
 	// Load the filenames of the two dice
 	$dice1 = 'die1.png';

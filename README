@@ -1,0 +1,16 @@
+aVDR is a random.org based dice roller that stores the dice rolled and generates images based on the dice rolls that then can be embedded in a forum post for play-by-post games.
+
+TO RUN:
+Upload all files to a suitable directory.
+Change the <<host>>, <<database>>, <<username>> and <<password>> strings to match your details
+Add a table called 'rolls' with the following rows:
+	uid - varchar(128)
+	rid - varchar(512)
+	result - varchar(512)
+	request - varchar(32)
+	target - int(255)
+	overtarget - int(255)
+	highest - int(255)
+	lowest - int(255)
+	highestdoubles - int(255)
+And you should be fine.
